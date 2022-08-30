@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.2" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_2.xsd">
+	<persistence-unit name="KlinikaJPA" transaction-type="RESOURCE_LOCAL">
+		<class>model.Admin</class>
+		<class>model.Dijagnoza</class>
+		<class>model.KlinikaKorisnik</class>
+		<class>model.KlinikaKorisnikuloga</class>
+		<class>model.KlinikaUloga</class>
+		<class>model.Lek</class>
+		<class>model.Lekar</class>
+		<class>model.Lekarusluge</class>
+		<class>model.Medicinskasestra</class>
+		<class>model.Odeljenje</class>
+		<class>model.Pacijent</class>
+		<class>model.Pregled</class>
+		<class>model.Rezervacija</class>
+		<class>model.Usluga</class>
+		<properties>
+			<property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/mydb"/>
+			<property name="javax.persistence.jdbc.user" value="root"/>
+			<property name="javax.persistence.jdbc.password" value="root"/>
+			<property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>
+		</properties>
+	</persistence-unit>
+</persistence>

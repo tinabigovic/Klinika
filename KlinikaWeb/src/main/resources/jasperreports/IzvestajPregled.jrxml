@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.18.1.final using JasperReports Library version 6.18.1-9d75d1969e774d4f179fb3be8401e98a0e6d1611  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="IzvestajPregled" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="04a31c3c-8496-462e-ab3e-29d0f9188136">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<parameter name="imePacijenta" class="java.lang.String"/>
+	<parameter name="prezimePacijenta" class="java.lang.String"/>
+	<parameter name="opis" class="java.lang.String"/>
+	<parameter name="lekarPrezime" class="java.lang.String"/>
+	<parameter name="jmbg" class="java.lang.String"/>
+	<parameter name="dijagnoza" class="java.lang.String"/>
+	<parameter name="dijagnozaS" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band splitType="Stretch"/>
+	</title>
+	<pageHeader>
+		<band splitType="Stretch">
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band splitType="Stretch"/>
+	</columnHeader>
+	<detail>
+		<band height="500" splitType="Stretch">
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			<staticText>
+				<reportElement x="0" y="101" width="130" height="20" forecolor="#85212D" uuid="27ca73ea-0138-421c-825d-1d9119d1fb35"/>
+				<box>
+					<pen lineColor="#030001"/>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#030001"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#030001"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#030001"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#030001"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="none">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Ime pacijenta:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="130" y="101" width="418" height="20" uuid="9ba1eb5a-8437-4453-b599-222072fb6174"/>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="none">
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{imePacijenta}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="130" y="121" width="418" height="20" uuid="73208484-1f31-4178-a0ce-b4cd36e56941"/>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="none">
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{prezimePacijenta}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="121" width="130" height="20" forecolor="#85212D" uuid="344b056d-e7d5-4520-86be-464a05ba889a"/>
+				<box>
+					<pen lineColor="#030001"/>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#030001"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#030001"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#030001"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#030001"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="none">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Prezime pacijenta:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="160" width="130" height="221" forecolor="#85212D" uuid="dfe50d03-3f9a-48bf-90de-83d82c120243"/>
+				<box>
+					<pen lineColor="#030001"/>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#030001"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#030001"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#030001"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#030001"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="none">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Opis pregleda:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="130" y="160" width="418" height="221" uuid="71dc5b90-2834-44f3-8376-2d740793f04c"/>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="none">
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{opis}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="141" width="130" height="19" forecolor="#85212D" uuid="c0dcb60c-81ca-46b7-a3fc-39433c85b249"/>
+				<box>
+					<pen lineColor="#030001"/>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#030001"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#030001"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#030001"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#030001"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[JMBG:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="381" width="130" height="19" forecolor="#85212D" uuid="12cabf7e-0989-44c1-9466-121359583948"/>
+				<box>
+					<pen lineColor="#030001"/>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#030001"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#030001"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#030001"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#030001"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Dijagnoza: ]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="130" y="141" width="418" height="19" uuid="5910539c-7756-4d7a-bee7-d7c0be26f9aa"/>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jmbg}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="189" y="381" width="359" height="19" uuid="022f5f20-e1c8-41aa-a1cf-a9b3700a77e6"/>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{dijagnoza}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="130" y="381" width="59" height="19" uuid="7d8f7655-cd0a-4655-8308-83e87f110e5b"/>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{dijagnozaS}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="92" y="20" width="370" height="40" forecolor="#7A1B12" uuid="a561bf0e-1b46-4bd2-a0ae-1dbf675ecbf4"/>
+				<textElement>
+					<font size="20" isBold="true" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[IZVESTAJ O IZVRSENOM PREGLEDU]]></text>
+			</staticText>
+		</band>
+	</detail>
+	<columnFooter>
+		<band splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="80" splitType="Stretch">
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			<staticText>
+				<reportElement x="379" y="20" width="170" height="30" forecolor="#9C1C16" uuid="80ad9cb6-1f64-4c1d-9ec9-84116eb4e9c1"/>
+				<box>
+					<topPen lineStyle="Solid" lineColor="#9C1C16"/>
+					<leftPen lineStyle="Solid" lineColor="#9C1C16"/>
+					<bottomPen lineStyle="Solid" lineColor="#9C1C16"/>
+					<rightPen lineStyle="Solid" lineColor="#9C1C16"/>
+				</box>
+				<textElement textAlignment="Justified" verticalAlignment="Middle">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Pregled obavio lekar:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="379" y="50" width="19" height="30" uuid="567d18e1-43db-4633-8b2e-5c2e02d83277"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[Dr]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="398" y="50" width="151" height="30" uuid="6d820c59-97d2-429e-a322-85d2e8c667bf"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{lekarPrezime}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+	<summary>
+		<band splitType="Stretch"/>
+	</summary>
+</jasperReport>
